@@ -18,3 +18,16 @@ FakeDroidLocker is a script-based Android app builder that:
 ---
 
 ## 📂 Folder Structure
+
+
+
+---
+
+## 🚀 How to Use
+
+1. Clone this repo:
+   ```bash
+   git clone https://github.com/YourUsername/FakeDroidLocker
+   cd FakeDroidLocker
+   chmod +x builder.sh
+   ./builder.sh
