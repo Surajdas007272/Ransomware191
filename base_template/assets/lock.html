@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>__HEADLINE__</title></head>
+<body style="background:black;color:white;text-align:center;padding-top:30%;">
+<h2>__HEADLINE__</h2>
+<p>__DESCRIPTION__</p>
+<input type="password" id="p" placeholder="Enter password" />
+<button onclick="check()">Unlock</button>
+<p id="msg"></p>
+<script>
+function check() {
+  if (document.getElementById("p").value === "__PASSWORD__") {
+    document.body.innerHTML = "<h2>✅ Device Unlocked!</h2>";
+  } else {
+    document.getElementById("msg").innerText = "❌ Wrong password!";
+  }
+}
+</script>
+</body>
+</html>
