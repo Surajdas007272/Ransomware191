@@ -1,23 +1,20 @@
-# Ransomware191
-A simple bash-based ransomware simulator made for educational and awareness purposes only.
+# ☠️ FakeDroidLocker – Educational Android Lock Screen App Builder
 
-# ☠️ Ransomware Simulator (Educational Purpose Only)
+**A tool to create fake ransomware-style Android APKs that simulate a lock screen using WebView. For educational purposes only.**
 
-A fake ransomware simulation tool created in Bash for Termux/Linux. This project is for **educational and ethical awareness only**.
+---
 
-## ⚠️ Legal Notice
-This tool does **not** actually encrypt files. It is meant to:
-- Teach about ransomware behavior.
-- Help in cybersecurity learning.
-- Be used in safe environments.
+## 📱 What does this tool do?
 
-**Do not use this script on someone else's system without permission.**
+FakeDroidLocker is a script-based Android app builder that:
 
-## 🔧 How to Use
+- Asks for custom **App Name**, **Unlock Password**, **Headline**, and **Description**
+- Uses your input to generate a fake **Android lock screen app**
+- The app opens in fullscreen and prevents back navigation
+- Unlocks only when the correct password is entered
 
-```bash
-git clone https://github.com/Surajdas007272/Ransomware191
-cd Ransomware191
-chmod +x sim.sh
-./sim.sh
-```
+⚠️ **This does NOT encrypt or damage any files.** It is just a simulation via WebView.
+
+---
+
+## 📂 Folder Structure
