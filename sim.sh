@@ -6,20 +6,19 @@
 
 clear
 
-# Skull ASCII Art
+# Cool Skull ASCII Art (visible on all screens)
 echo -e "\e[36m"
 cat << "EOF"
-        ██████████
-      ██          ██
-    ██    ██  ██    ██
-  ██      ██████      ██
- ██        ████        ██
- ██                    ██
- ██   ██████████████   ██
-   ██   ██████████   ██
-     ██            ██
-       ██        ██
-         ████████
+       ▄███████████▄
+     ████▀▀▀███▀▀▀████
+    ███▀    ███    ▀███
+   ███      ███      ███
+   ███      ███      ███
+   ███    ▄████▄    ███
+    ███  ████████  ███
+     ███▄████████▄███
+       ▀███████████▀
+           ▀▀▀▀▀
 EOF
 echo -e "\e[0m"
 
@@ -43,7 +42,12 @@ read -p "Enter app name: " appname
 read -p "Enter logo path (just for display): " logo
 read -p "Enter headline: " headline
 read -p "Enter description: " description
-read -sp "Set unlock password: " password
+
+# Set Password (hidden input, cross-platform method)
+echo -n "Set unlock password: "
+stty -echo
+read password
+stty echo
 echo ""
 
 # Fake Lock Screen
@@ -58,8 +62,10 @@ echo -e "\e[33m\nAll files are safe but locked. To unlock, enter password.\e[0m"
 
 # Unlock loop
 while true; do
-    echo ""
-    read -sp "Enter unlock password: " entered
+    echo -n "Enter unlock password: "
+    stty -echo
+    read entered
+    stty echo
     echo ""
     if [[ "$entered" == "$password" ]]; then
         echo -e "\e[32m✔️ Access granted. Device unlocked.\e[0m"
