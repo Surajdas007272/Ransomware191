@@ -16,7 +16,8 @@ This tool does **not** actually encrypt files. It is meant to:
 ## 🔧 How to Use
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ransomware-simulator.git
+git clone https://github.com/Surajdas007272/Ransomware191
 cd ransomware-simulator
 chmod +x sim.sh
 ./sim.sh
+```
